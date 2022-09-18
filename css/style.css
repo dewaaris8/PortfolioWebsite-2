@@ -1,0 +1,322 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: work sans;
+  overflow-x: hidden;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"]{
+	float: left;
+}
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%}
+.col-3 {width:25%;}
+.col-4 {width:33.3%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.6%;}
+.col-12 {width:100%;}
+
+.btn-gradient {
+  margin-top: 30px;
+  padding: 1.2rem 1.7rem;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: .9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .7s;
+  letter-spacing: 1.5px;
+  outline: none;
+  background: #b224ef;
+  background: -webkit-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+  background: -o-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+  background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+  background-size: 101% auto;
+}
+.btn-gradient:hover {
+  background-size: 200% auto;
+  background-position: left center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+}
+
+.bg-header {
+  margin: 0;
+}
+
+.bg-menu {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 90px;
+  border-bottom: 1px solid #ececec;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li.logo {
+  float: left;
+}
+
+nav ul li a {
+  padding: 1rem 1.6rem; /*1rem === 16px*/
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #1bd1ea;
+  transition: .7s;
+}
+
+.banner {
+  min-height: 800px;
+  background-image: url(../image/banner/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-banner {
+  padding-top: 10%;
+  padding-left: 7%;
+  width: 50%;
+}
+
+.text-banner h1 {
+  font-size: 2.3em;
+  color: #333;
+  line-height: 1.7;
+}
+
+.text-banner p {
+  font-size: .9em;
+  color: #666;
+  line-height: 1.7;
+}
+
+.bg-service {
+  padding: 5% 0;
+}
+
+.wrap-center{
+  width: 80%;
+  margin: auto;
+}
+
+.judul {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.judul h1 {
+  color: #333;
+  font-size: 2em;
+  padding-bottom: 1rem;
+}
+
+.judul p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.service {
+  padding: 5rem 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: .7s;
+}
+
+.active {
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.service:hover {
+  box-shadow: 0 2px 10px #ccc;
+}
+
+.service i {
+  font-size: 3.1em;
+  color: #333;
+}
+
+.service h2 {
+  font-size: 1.3em;
+  color: #333;
+  padding: 2rem 0;
+}
+
+.service p {
+  font-size: .8em;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* .bg-about {
+  background-color: #fafafa;
+  padding: 5% 0;
+  margin: 10% 0;
+} */
+
+.about-image {
+  margin-top: 140px;
+  margin-left: 100px; 
+  height: 400px;
+  background-color: red;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-text {
+  padding: 20% 0%;
+}
+
+.about-text h1 {
+  padding-top: 20%;
+  font-size: 2em;
+  color: #333;
+}
+
+.about-text p {
+  color: #666;
+  font-size: .9em;
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+
+.bg-portfolio{
+  padding-bottom: 15%;
+  padding-top: 4%;
+}
+
+.portfolio{
+  margin: .7rem;
+}
+
+.portfolio img{
+  width: 100%;
+}
+
+.bg-team{
+  background-image: url(../image/banner/leafs.png);
+  padding: 5% 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ececec;
+}
+
+.team{
+  margin: 1rem;
+  text-align: center;
+}
+
+.team img{
+  width: 100%
+}
+
+.team h2{
+  padding-top: 5%;
+  color: #333;
+}
+
+.bg-contact{
+  margin: 5% 0;
+  padding: 5% 0;
+  padding-top: 9%;
+}
+
+.contact{
+  margin: 1rem;
+}
+
+.contact h1{
+  color: #333;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+
+}
+
+.contact p{
+  color: #666;
+  line-height: 1.7;
+}
+
+.contact input{
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border:1px solid #ececec;
+  font-size: 1.4em;
+  border-radius: 20px;
+  outline: none;
+}
+
+.contact img{
+  width: 100%;
+  margin-top: -100px;
+}
+
+.bg-footer{
+  background-image: url(../image/bg-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+  margin-top: -150px;
+}
+
+.footer{
+  padding-top: 30%;
+  text-align: center;
+}
+
+.footer p{
+  color: #fff;
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+
+.footer p i{
+  margin: 1rem 0;
+  padding:0 1rem;
+}
